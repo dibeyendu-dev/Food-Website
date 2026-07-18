@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #38c0c4;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(14, 13, 13);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0px;
+}
+header h1{
+    font-style: italic;
+}
+nav a {
+    font-size: 18px;
+    color: white;
+    margin: 0px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.5s;
+    padding: 5px 13px;
+}
+
+nav a:hover {
+    color: rgb(32, 33, 33);
+    background-color: rgb(10, 239, 162);
+    font-size: 22px;
+    box-shadow: 0 0 10px orange;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to right, #3f3a3a, #333);
+}
+
+.home span {
+    color: orange;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, purple, pink);
+    border: none;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px orange;
+}
+
+/* ICONS */
+.icons {
+    margin-top: 15px;
+}
+
+.icons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    background: orange;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* SECTION */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skill {
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.bar {
+    background: #ede8e8;
+    border-radius: 10px;
+}
+
+.bar span {
+    display: block;
+    height: 10px;
+    background: rgb(2, 156, 5);
+}
+
+/* PROJECT */
+.card {
+    background: #1e293b;
+    margin: 25px auto;
+    padding: 20px;
+    width: 320px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card button {
+    margin-top: 10px;
+    background: white;
+    color: black;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px purple;
+}
+
+/* CONTACT */
+.contact input {
+    display: block;
+    margin: 18px auto;
+    padding: 13px;
+    width: 275px;
+    border-radius: 10px;
+}
+
+.contact button {
+    background: linear-gradient(to right, purple, pink);
+}
+
+/* SERVICES */
+.service-box {
+    background: #1e293b;
+    margin: 15px auto;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px orange;
+}
+
+/* EDUCATION */
+.edu-box {
+    background: #333;
+    margin: 15px auto;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* EXTRA CONTACT */
+#extra-contact p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
