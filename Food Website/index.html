@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <h2 class="logo">Foodie Express</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Cart</a>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Delicious food deliver to you</h1>
+            <p>Order your favourite meals anytime, anywhere</p>
+            <button onclick="scrollToMenu()">Order Now</button>
+        </div>
+    </section>
+    <!-- MENU -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Food...." onkeyup="searchFood()">
+
+            <div class="food-container">
+                <div class="food-card">
+                    <img src="images/burger.jpg" alt="burger">
+                    <h3>Burger</h3>
+                    <p>120</p>
+                    <button onclick="addToCart('Burger', 120)">Add To Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="images/pasta.jpg" alt="pasta">
+                    <h3>Pasta</h3>
+                    <p>120</p>
+                    <button onclick="addToCart('pasta', 180)">Add To Cart</button>
+                </div>
+                <div class="food-card">
+                    <img src="images/pizza.jpg" alt="pizza">
+                    <h3>Pizza</h3>
+                    <p>120</p>
+                    <button onclick="addToCart('Pizza', 250)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CART -->
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <h3>TOTAL:-$<span id="total">0</span></h3>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
