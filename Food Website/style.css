@@ -1,0 +1,239 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    background: url('images/bg.jpg') no-repeat center/cover;
+    min-height: 100vh;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background: linear-gradient(45deg, #e8c5c5, #30d9ce);
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    font-size: 24px;
+    color: rgb(31, 29, 29);
+}
+
+header nav a {
+    font-size: 18px;
+    margin-left: 25px;
+    color: rgb(45, 40, 40);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+    padding: 0px 25px;
+}
+
+nav a:hover {
+    color: #f41a0a;
+    font-size: 21px;
+    transform: scale(1.1);
+
+}
+
+/* UNDERLINE ANIMATION */
+header nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* DARK MODE BUTTON */
+#theme-toggle {
+    margin-left: 20px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images/hero.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.hero-text button {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    background: #ff4d4d;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background: black;
+    transform: scale(1.05);
+}
+
+/* MENU */
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    margin-bottom: 12px;
+}
+
+/* SEARCH */
+.search-box input {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    width: 350px;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* FOOD CONTAINER */
+.food-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.food-card {
+    background: white;
+    padding: 15px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+body.dark .food-card {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* IMAGE ZOOM EFFECT */
+.food-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.food-card:hover img {
+    transform: scale(1.1);
+}
+
+/* CARD HOVER */
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+/* BUTTON */
+.food-card button {
+    margin-top: 10px;
+    padding: 8px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.food-card button:hover {
+    background: black;
+}
+
+/* CART */
+.cart {
+    padding: 50px;
+    text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .search-box input {
+        width: 200px;
+    }
+}
