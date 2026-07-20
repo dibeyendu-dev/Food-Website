@@ -62,7 +62,7 @@ images/preview.png
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/Frontend-Showcase-01.git
+git clone https://github.com/dibeyendu-dev/Frontend-Showcase-01.git
 ```
 
 2. Open
