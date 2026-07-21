@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM WEBSITE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header class="navbar">
+    <h2>FITZONE</h2>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#plans">Plans</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#bmi">BMI</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="menu">☰</button>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div>
+      <h1>Transform Your Body</h1>
+      <p>Train Hard. Stay Fit.</p>
+      <button class="btn">Join Now</button>
+    </div>
+  </section>
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service">Weight Training</div>
+    <div class="service">Cardio</div>
+    <div class="service">Personal Training</div>
+  </section>
+  <!-- PLANS -->
+  <section id="plans" class="plans">
+    <h2>Our Plans</h2>
+
+    <div class="plan-container">
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">₹999</p>
+        <p>Gym Access</p>
+      </div>
+
+      <div class="plan-card active">
+        <h3>Standard</h3>
+        <p class="price">₹1999</p>
+        <p>All Features</p>
+      </div>
+
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <p class="price">₹2999</p>
+        <p>Personal Trainer</p>
+      </div>
+    </div>
+  </section>
+  <!-- TRAINERS -->
+  <section id="trainers" class="trainers">
+    <h2>Meet Our Trainers</h2>
+
+    <div class="trainer-container">
+      <div class="trainer-card">
+        <img src="images/trainers1.jpg">
+        <h3>John</h3>
+      </div>
+
+      <div class="trainer-card">
+        <img src="images/trainers.jpg">
+        <h3>Lisa</h3>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS SECTION -->
+  <section class="back">
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+
+      <div class="testimonial-container">
+
+        <div class="testimonial">
+          <p>"Best Gym Ever"</p>
+          <h4>- Rahul</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>"Amazing Trainers"</p>
+          <h4>- Priya</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>"Great Environment"</p>
+          <h4>- Aman</h4>
+        </div>
+
+      </div>
+    </section>
+    <!-- BMI SECTION -->
+    <section id="bmi" class="bmi">
+      <h2>BMI Calculator</h2>
+      <input type="number" id="weight" placeholder="Weight(kg)">
+      <input type="number" id="Height" placeholder="Height(cm)">
+      <button onclick="calculateBMI()" class="btn">Calculate</button>
+      <p id="result"></p>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="form">
+        <input type="text" id="name" placeholder="Enter your Name">
+        <input type="email" id="email" placeholder="Enter Your E-Mail here">
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </section>
+  <footer class="footer">©2026 FitZone Gym</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
